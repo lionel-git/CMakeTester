@@ -12,7 +12,7 @@ endif()
 project ("CMakeTester")
 
 # Add source to this project's executable.
-add_executable (CMakeTester "CMakeTester.cpp" "CMakeTester.h")
+add_executable (CMakeTester "CMakeTester.cpp" "CMakeTester.h" "other_file.cpp" "other_file.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET CMakeTester PROPERTY CXX_STANDARD 20)

@@ -2,11 +2,11 @@
 //
 
 #include "CMakeTester.h"
-
-using namespace std;
+#include "other_file.h"
 
 int main()
 {
-	cout << "Hello CMake." << endl;
+	std::cout << "Hello CMake." << std::endl;
+	my_test();
 	return 0;
 }
